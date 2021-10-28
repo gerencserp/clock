@@ -1,0 +1,121 @@
+#ccdate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+    font-family: 'Vast Shadow', cursive;
+    font-size: 60pt;
+    color: gold;
+    background-color: blue;
+}
+
+#cctime {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Vast Shadow', cursive;
+    font-size: 80pt;
+    background-color: black;
+}
+
+#hours {
+    color: #ff0000;
+    width: 180px;
+}
+
+#minutes {
+    color: #ff4000;
+    width: 180px;
+}
+
+#seconds {
+    color: #ff8000;
+    width: 180px;
+}
+
+@keyframes clockColors {
+    0% {
+        background-color: #ff0000;
+    }
+    5% {
+        background-color: #ff4000;
+    }
+    10% {
+        background-color: #ff8000;
+    }
+    15% {
+        background-color: #ffbf00;
+    }
+    20% {
+        background-color: #ffff00;
+    }
+    25% {
+        background-color: #bfff00;
+    }
+    30% {
+        background-color: #80ff00;
+    }
+    35% {
+        background-color: #00ff00;
+    }
+    40% {
+        background-color: #00ffbf;
+    }
+    45% {
+        background-color: #00ffff;
+    }
+    50% {
+        background-color: #00bfff;
+    }
+    55% {
+        background-color: #0040ff;
+    }
+    60% {
+        background-color: #8000ff;
+    }
+    65% {
+        background-color: #bf00ff;
+    }
+    70% {
+        background-color: #ff00ff;
+    }
+    75% {
+        background-color: #ff00bf;
+    }
+    80% {
+        background-color: #ff0080;
+    }
+    85% {
+        background-color: #ff0040;
+    }
+    90% {
+        background-color: #ff0000;
+    }
+    95% {
+        background-color: #b32d00;
+    }
+    100% {
+        background-color: #ff0000;
+    }
+}
+
+body {
+    animation-name: clockColors;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 768px) {
+    #ccdate {
+        font-size: 25pt;
+    }
+    #cctime {
+        font-size: 35pt;
+    }
+    #hours,
+    #minutes,
+    #seconds {
+        width: 90px;
+    }
+}
