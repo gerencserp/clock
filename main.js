@@ -1,6 +1,12 @@
 "use strict";
 
+
+/* Encapsulation of the code */
+
 (() => {
+
+
+    /* Clock structure */
 
     function colorClock() {
         let date = new Date();
